@@ -1,0 +1,11 @@
+{ 
+  "name": "Editor",
+  "type": "jmaki",
+  "version": "1.8",
+  "jmakiVersion" : "1.8",
+  "author" : "Greg Murray",
+  "image" : "images/jmaki-editor.jpg",           
+  "url" : "https://widgets.dev.java.net",
+  "description": "An Editable HTML dispayer.",
+  "hasCSS" : false
+}

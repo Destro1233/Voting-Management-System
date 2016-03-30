@@ -1,0 +1,46 @@
+{"name": "Accordion Container",
+         "type": "Dojo Dijit",
+         "image" : "images/dojo-dijit-accordion.jpg",
+         "jmakiVersion" : "1.8.1",
+         "version" : "1.8.1",
+          "docs" : {
+     		"modelURL" : "http://wiki.java.net/bin/view/Projects/jMakiMenuDataModel",
+		 },
+         "description": "This widget is an accordion container which you can customize using inline text or URLs to resources.",
+         "value": {
+            "required": false,
+            "type": "OBJECT",
+            "defaultValue":{	
+             "items":[
+                {"label": "Books", "content": "Book content"},
+                {"label": "Magazines", "content": "Magazines here"},
+                {"label": "Newspaper", "content": "Newspaper content"}
+              ]
+            },
+            "description":"An object containing an array of row objects. Each object has a label property and may have a URL that maps to an external resource or a content attribute which contains inline text."
+     },  
+     "config" : {
+          "type" :
+           { "id" : "dijit",
+               "themes" : [
+                   {"id" : "blue",
+                    "default" : true,
+                    "style" : "../resources/libs/dojo/v1.2.0/dijit/themes/tundra/tundra.css"
+                   }
+               ],
+             "libs" : [
+                   "../resources/libs/dojo/v1.2.0/dojo/dojo.js"
+               ],
+
+               "preload" : "djConfig={parseOnLoad: false, extraLocale: [\"en-us\"]}",
+               "resources" : [
+                   "../resources/libs/dojo/v1.2.0/dojo",
+                   "../resources/libs/dojo/v1.2.0/dijit"
+               ]
+          }  
+        },
+    "topicInfo": {
+       "defaultPublish" : "/dojo/accordionMenu",
+       "description":"on onclick event publish to /dojo/accordionMenu topic passing the cooresponding string for the menu item selected.",       "events" : [           {"name" :  "onClick",           "description" : "publish the value of the selected item"}        ]
+    }  
+ }

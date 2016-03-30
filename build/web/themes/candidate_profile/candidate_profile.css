@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+.menucell {
+	text-align: left;
+	vertical-align: top;
+	width: 25%;
+}
+
+.datacell {
+	text-align: left;
+	vertical-align: top;
+	width: 65%;
+}

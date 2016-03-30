@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+.menucell {
+	width: 27%;
+}
+
+.datacell {
+	text-align: left;
+	vertical-align: top;
+	width: 73%;
+}
+
+.masterOrange {
+	background-color: #ff8000;
+	width: 25%;
+	height: 250px;
+}
+
+.masterWhite {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25%;
+	height: 250px;
+}
+
+.masterGreen {
+	background-color: green;
+	width: 25%;
+	height: 250px;
+}
+
+.master_page_center {
+	width: 50%;
+	text-align: left;
+	vertical-align: top;
+}

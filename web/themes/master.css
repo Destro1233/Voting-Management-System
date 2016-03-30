@@ -1,0 +1,90 @@
+@CHARSET "ISO-8859-1";
+
+.masterOrange {
+	background-color: #ff8000;
+	width: 25%;
+	height: 300px;
+}
+
+.masterWhite {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25%;
+	height: 300px;
+}
+
+.masterGreen {
+	background-color: green;
+	width: 25%;
+	height: 300px;
+}
+
+.masterbody {
+	
+}
+
+.logo {
+	text-align: left;
+	vertical-align: top;
+	height: 100px;
+	width: 100%;
+	}
+
+.table_background {
+
+	background-image: url('../images/emblem.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: alpha(opacity=100);
+	opacity: 0.9;
+}
+.master_page_center {
+	width: 50%;
+	text-align: left;
+	vertical-align: top;
+}
+
+.master_center_table {
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+	
+}
+
+.footer {
+	text-align: left;
+	vertical-align: bottom;
+	width: 90%;
+}
+
+.index_content {
+	background-image: url('../images/emblem.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.reg_body
+{
+background-color:#C8C8C8 ;
+
+
+}
+.reg_table
+{
+background-color:#FFFFCC;
+padding:20;
+
+}
+
+.login_table
+{
+background-color:#FFFFCC;
+PADDING-TOP: 100px;
+
+}
+.login_body
+{
+
+background-color:#C8C8C8 ;
+
+}

@@ -1,0 +1,54 @@
+{"name": "Dialog",
+         "type": "Dojo Dijit",
+         "image" : "images/dojo-dijit-dialog.jpg",
+         "jmakiVersion" : "1.8.1",
+         "version" : "1.8.1",
+         "docs" : {
+         	"modelURL" : "http://wiki.java.net/bin/view/Projects/jMakiDialogDataModel"
+         },        
+         "description": "This widget is dynamic container which uses a dynamic container",
+         "args": [
+           
+          ],
+         "value": {
+             "required": true,
+             "type": "OBJECT",
+             "defaultValue":
+             {"label" : "Im a dialog", "content" : "Content here"},
+             "description":"An array item arrays that are added to the widget."
+     },
+          "config" : {
+          "type" :
+           { "id" : "dijit",
+               "themes" : [
+                   {"id" : "blue",
+                    "default" : true,
+                    "style" : "../resources/libs/dojo/v1.2.0/dijit/themes/tundra/tundra.css"
+                   }
+               ],
+             "libs" : [
+                   "../resources/libs/dojo/v1.2.0/dojo/dojo.js"
+               ],
+
+               "preload" : "djConfig={parseOnLoad: false, isDebug: false, extraLocale: [\"en-us\"]}",
+               "resources" : [
+                   "../resources/libs/dojo/v1.2.0/dojo",
+                   "../resources/libs/dojo/v1.2.0/dijit"
+               ]
+          }  
+        },
+       "topicInfo": {
+       "defaultPublish" : "/dojo/dijit/dialog",       "defaultSubscribe" : ["/dojo/dijit/dialog", "/dialog"],
+      "commands" : [
+          {"name" : "setContent",
+          "description" : "Clears the dialog and sets content to the value provided."},
+          {"name" : "setInclude",
+          "description" : "Clears the dialog and loads the content with the data provided by the URL. "},
+          {"name" : "hide",
+          "description" : "Makes the dialog not visible. "},
+          {"name" : "visible",
+          "description" : "Makes the dialog visible."
+          }
+      ],       "events" : [           {"name" :  "onSelect",           "description" : "publish the value of the selected item"}         ]    }
+
+  }

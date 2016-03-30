@@ -1,0 +1,53 @@
+{"name": "Tabbed View Container",
+         "type": "Dojo Dijit",
+         "jmakiVersion" : "1.8.1",
+         "version" : "1.8.1",
+         "docs" : {
+         	"modelURL" : "http://wiki.java.net/bin/view/Projects/jMakiMultiViewContainerDataModel"
+         },         
+         "image" : "images/dojo-dijit-tabbedview.jpg",
+         "description": "This widget is an tab view which you can customize the tabs using inline text or URLs to resources.",
+        
+         "value": {
+            "required": false,
+            "type": "OBJECT",
+            "defaultValue":{
+              "items" : [
+              {"label" : "Tab 0", "content" : "This is the default data provided for a tabbed view."},
+              {"label" : "Tab 1", "content" : "Tab 1 content"},
+              {"label" : "Tab 2", "include" : "test.jsp", "selected" : true}
+             ]},
+          "description":"An object containing an array of tab objects. Each object has a label property and may have a URL that maps to an external resource or a content attribute which contains inline text."
+      },
+"config" : {
+          "type" :
+           { "id" : "dijit",
+               "themes" : [
+                   {"id" : "blue",
+                    "default" : true,
+                    "style" : "../resources/libs/dojo/v1.2.0/dijit/themes/tundra/tundra.css"
+                   }
+               ],
+             "libs" : [
+                   "../resources/libs/dojo/v1.2.0/dojo/dojo.js"
+               ],
+
+               "preload" : "djConfig={parseOnLoad: false}",
+               "resources" : [
+                   "../resources/libs/dojo/v1.2.0/dojo",
+                   "../resources/libs/dojo/v1.2.0/dijit"
+               ]
+          }  
+        },
+       "topicInfo": {
+       "defaultPublish" : "/dojo/tabbedview",       "defaultSubscribe" : ["/dojo/tabbedview", "/tabbedview"],
+      "commands" : [
+          {"name" : "setContent",
+          "description" : "Clears the dialog and sets content to the value provided."},
+          {"name" : "setInclude",
+          "description" : "Clears the dialog and loads the content with the data provided by the URL. "},
+          {"name" : "select",
+          "description" : "Select the tabbed with the provided id."
+          }
+      ],       "events" : [           {"name" :  "onSelect",           "description" : "publish the id of the selected tab"}         ]    }
+}
